@@ -544,7 +544,7 @@ class UDP():
         #print(offset,length,bits[offset:offset+length])
         string_code=struct.unpack(bits_selected,bits[offset:offset+length])
         string_code="".join(chr(i) for i in string_code)
-        print(string_code)
+        #print(string_code)
         if string_code in self.event_formattable:
             #returning=offset_bits+bits_selected+self.extract_format(self.super["EventDataDetails"][self.event_formattable[string_code]])
             return offset_bits+bits_selected+self.extract_format(self.super["EventDataDetails"][self.event_formattable[string_code]]),string_code
@@ -568,6 +568,7 @@ class UDP():
     #     return "<BBBBB"+"BfBBBBBBfBBBfBIfI"#"BfBBBBBBBBBBBfBBBfBBBIfI"
     #     return offset_bits+bits_selected+"BfBBBBBBfBBBfBIfI"#"BfBBBBBBBBBBBfBBBfBBBIfI"
     
+#abc=UDP()
 # udp=UDP()
 # print(udp.event_format(1))
 # print(struct.calcsize(udp.event_format(1)))
