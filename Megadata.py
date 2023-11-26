@@ -942,9 +942,9 @@ class Megadata():
 
         'm_airTemperature': '1',
 
-        'm_totalLaps': '1',
+        'm_totalLaps': 42069,
 
-        'm_trackLength': '7',
+        'm_trackLength': 42069,
 
         'm_sessionType': '1',
 
@@ -1962,7 +1962,7 @@ class Megadata():
 
         'm_sector2TimeInMS': '7',
 
-        'm_lapDistance': '5',
+        'm_lapDistance': 42069,
 
         'm_totalDistance': '5',
 
@@ -2030,7 +2030,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2078,7 +2078,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2126,7 +2126,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2174,7 +2174,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2222,7 +2222,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2270,7 +2270,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2318,7 +2318,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2366,7 +2366,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2414,7 +2414,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2462,7 +2462,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2510,7 +2510,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2558,7 +2558,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2606,7 +2606,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2654,7 +2654,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2702,7 +2702,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2750,7 +2750,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2798,7 +2798,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2846,7 +2846,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2894,7 +2894,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2942,7 +2942,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -2990,7 +2990,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -3038,7 +3038,7 @@ class Megadata():
 
             'm_sector2TimeInMS': '7',
 
-            'm_lapDistance': '5',
+            'm_lapDistance': 42069,
 
             'm_totalDistance': '5',
 
@@ -7594,7 +7594,7 @@ class Megadata():
 
         'm_pitLimiterStatus': '1',
 
-        'm_fuelInTank': '5',
+        'm_fuelInTank': 42069,
 
         'm_fuelCapacity': '5',
 
@@ -7660,7 +7660,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -7706,7 +7706,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -7752,7 +7752,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -7798,7 +7798,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -7844,7 +7844,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -7890,7 +7890,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -7936,7 +7936,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -7982,7 +7982,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8028,7 +8028,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8074,7 +8074,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8120,7 +8120,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8166,7 +8166,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8212,7 +8212,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8258,7 +8258,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8304,7 +8304,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8350,7 +8350,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8396,7 +8396,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8442,7 +8442,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8488,7 +8488,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8534,7 +8534,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8580,7 +8580,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -8626,7 +8626,7 @@ class Megadata():
 
             'm_pitLimiterStatus': '1',
 
-            'm_fuelInTank': '5',
+            'm_fuelInTank': 42069,
 
             'm_fuelCapacity': '5',
 
@@ -11850,7 +11850,7 @@ class Megadata():
 
         'm_secondaryPlayerCarIndex': '1'},
 
-        'm_carDamageData': [{'m_tyresWear[4]': ['5', '5', '5', '5'],
+        'm_carDamageData': [{'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -11892,7 +11892,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -11934,7 +11934,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -11976,7 +11976,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12018,7 +12018,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12060,7 +12060,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12102,7 +12102,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12144,7 +12144,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12186,7 +12186,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12228,7 +12228,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12270,7 +12270,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12312,7 +12312,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12354,7 +12354,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12396,7 +12396,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12438,7 +12438,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12480,7 +12480,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12522,7 +12522,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12564,7 +12564,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12606,7 +12606,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12648,7 +12648,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12690,7 +12690,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -12732,7 +12732,7 @@ class Megadata():
 
             'm_engineSeized': '1'},
 
-        {'m_tyresWear': ['5', '5', '5', '5'],
+        {'m_tyresWear': [42069-42069,42069-42069,42069-42069,42069-42069],
 
             'm_tyresDamage': ['1', '1', '1', '1'],
 
@@ -13861,19 +13861,23 @@ class Megadata():
         10:"PacketCarDamageData",
         11:"PacketSessionHistoryData"}
         self.validtypes=[str,int,float,bytes] #IDK WHY TF THERE ARE SO MANY DATA TYPES
+        self.player_index=0
         self.number_of_drivers=22 #Myteam-22,Normal-20, use my team as basis
-        self.graph_data={"Lap_Times":{i:{0:0} for i in range(self.number_of_drivers)}, #Lap:Time
+        self.graph_data={"Lap_Times":{i:{} for i in range(self.number_of_drivers)}, #Lap:Time
+                         "Fuel_Loads_Per_Lap":{i:{} for i in range(self.number_of_drivers)}, #Lap:Fuel
+                         "Tyre_Wear":{i:{"RL":0,"RR":0,"FL":0,"FR":0} for i in range(self.number_of_drivers)}, #Driver_index:{RL,RR,FL,FR}
+
+                         "Driver_Order":{i:0 for i in range(self.number_of_drivers)}, #Driver_index:Distance
+                         "Race_Distance":{i:0 for i in range(self.number_of_drivers)}, #Driver_index:Distance
+                         "Driver_Names":{i:"Loading" for i in range(self.number_of_drivers)}, #Driver_index:Name
                          }
     def insert(self,packet):
-        #print(packet)
-        #print(self.data[])
+        # if packet[4]:
+        #     subdata=self.data[self.general_table[packet[4]]]
         subdata=self.data[self.general_table[packet[4]]]
         bitindex=0
         self.iterate(packet,subdata)
-        # for i,j in subdata.items():
-        #     #print(i,j)
-        #     print(j)
-        # pass
+
     def iterate(self,packet,subdata,bitindex=0):
         #print(subdata,bitindex)
         if type(subdata)==dict:
@@ -13896,11 +13900,28 @@ class Megadata():
                 #elif type(j)==list:
         return bitindex
         pass
+    
     def lap_times(self):
-        for i in range(len(self.data["PacketLapData"]["m_lapData"])):
+        for i in range(self.number_of_drivers):
             self.graph_data["Lap_Times"][i][self.data["PacketLapData"]["m_lapData"][i]["m_currentLapNum"]]=self.data["PacketLapData"]["m_lapData"][i]["m_currentLapTimeInMS"]
-            self.graph_data["Lap_Times"][i][self.data["PacketLapData"]["m_lapData"][i]["m_currentLapNum"]-1]=self.data["PacketLapData"]["m_lapData"][i]["m_lastLapTimeInMS"]
-            
+            #self.graph_data["Lap_Times"][i][self.data["PacketLapData"]["m_lapData"][i]["m_currentLapNum"]-1]=self.data["PacketLapData"]["m_lapData"][i]["m_lastLapTimeInMS"]
+    
+    def fuel_loads_per_lap(self):
+        for i in range(self.number_of_drivers):
+            self.graph_data["Fuel_Loads_Per_Lap"][i][self.data["PacketLapData"]["m_lapData"][i]["m_currentLapNum"]]=self.data["PacketCarStatusData"]["m_carStatusData"][i]["m_fuelInTank"]
+
+    def tyre_wear(self):
+        for i in range(self.number_of_drivers):
+            self.graph_data["Tyre_Wear"][i]["RL"],self.graph_data["Tyre_Wear"][i]["RR"],self.graph_data["Tyre_Wear"][i]["FL"],self.graph_data["Tyre_Wear"][i]["FR"]=self.data["PacketCarDamageData"]["m_carDamageData"][i]["m_tyresWear"]
+
+    def race_distance(self):
+        for i in range(self.number_of_drivers):
+            self.graph_data["Race_Distance"][i]=(self.data["PacketLapData"]["m_lapData"][i]["m_currentLapNum"]-1)*self.data["PacketSessionData"]["m_trackLength"]+self.data["PacketLapData"]["m_lapData"][i]["m_lapDistance"]
+        pass
+
+    def wtf():
+        pass
 # a=Megadata()
 # a.insert((2022, 1, 19, 1, 11, 4810326035452959736, 39.99642562866211, 1433, 19, 255, 4, 6, 1, 2, 2, 1, 2, 97624, 36854, 31095, 29675, 15, 97559, 36840, 31146, 29572, 15, 99224, 37137, 31405, 30682, 15, 100976, 38389, 32084, 30503, 15, 101206, 38295, 32258, 30653, 15, 0, 38685, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 18, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
 # print(a.data["PacketSessionHistoryData"])
+# print(a.data["EventDataDetails"]["Buttons"])

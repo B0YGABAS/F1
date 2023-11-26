@@ -1,26 +1,21 @@
 import socket
 import struct
+import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
 import mplcyberpunk
 import concurrent.futures
 import random
-import f1_22_telemetry.listener
+#import f1_22_telemetry.listener
 import pandas as pd
+import threading
+import time
 
 import UDP_Formats
 import Megadata
+import Computations
 
-
-
-#print(UDP_Formats.abc.codes)
-
-udp=UDP_Formats.UDP()
-for i in udp.codes:
-    if not callable(udp.codes[i]):
-        if '<' not in udp.codes[i]:
-            udp.codes[i]="<"+udp.codes[i]
 localIP="127.0.0.1"
 localPort=20777
 bufferSize=57460#1024
@@ -65,8 +60,13 @@ Buttons={'Cross or A': 1,
  'UDP Action 11': 1073741824,
  'UDP Action 12': 2147483648}
 
-
+udp=UDP_Formats.UDP()
+for i in udp.codes:
+    if not callable(udp.codes[i]):
+        if '<' not in udp.codes[i]:
+            udp.codes[i]="<"+udp.codes[i]
 mega=Megadata.Megadata()
+compute=Computations.Computations()
 
 class Interface():
     def __init__(self):
@@ -76,85 +76,94 @@ interface=Interface()
 print(interface.mode)
 plt.style.use("cyberpunk")
 
-pool= concurrent.futures.ThreadPoolExecutor(3)
 def get_packet():
-    packet,address=UDPServerSocket.recvfrom(bufferSize)
-    data=udp.codes[struct.unpack(data_format,packet[:24])[4]]
-    if callable(data):
-        data,string_code=data(packet)
-    data=struct.unpack(data,packet[:struct.calcsize(data)])
-    return data
+    while True:
+        packet,address=UDPServerSocket.recvfrom(bufferSize)
+        data=udp.codes[struct.unpack(data_format,packet[:24])[4]]
+        string_code="Nothing"
+        if callable(data):
+            data,string_code=data(packet)
+        data=struct.unpack(data,packet[:struct.calcsize(data)])
+        if data[4]!=3:
+            mega.insert(data)
+        elif string_code in udp.event_formattable:
+            mega.iterate(data,mega.data["EventDataDetails"][udp.event_formattable[string_code]],14) #14 is where after the index of stringcodes
+        #print(data)
+        #print(data)
 
-work1=pool.submit(get_packet)
+def check_player_count():
+    while type(mega.data["PacketParticipantsData"]["m_numActiveCars"])==str:
+        time.sleep(1)
+        #"STANDBY"
+    original_number_of_players=mega.number_of_drivers
+    mega.number_of_drivers=mega.data["PacketParticipantsData"]["m_numActiveCars"]
+    for i,j in mega.graph_data.items():
+        for k in range(mega.number_of_drivers,original_number_of_players):
+            mega.graph_data[i].pop(k)
+    mega.player_index=mega.data["PacketParticipantsData"]["m_header"]["m_playerCarIndex"] #struct.unpack(data_format,packet[:24])[8]
+    for i in mega.graph_data["Driver_Names"]:
+        try:
+            mega.graph_data["Driver_Names"][i]="".join(j.decode("utf-8") for j in mega.data["PacketParticipantsData"]["m_participants"][i]["m_name"][:
+                                                                                                                                    mega.data["PacketParticipantsData"]["m_participants"][i]["m_name"].index(b'\x00')])
+        except: #FUCKING PEREZ HAS A BUGGY TELEMETRY NAME
+            print([j for j in mega.data["PacketParticipantsData"]["m_participants"][i]["m_name"]])
+            mega.graph_data["Driver_Names"][i]="PEREZ"
+thread1=threading.Thread(target=get_packet)
+thread1.daemon=True
+#thread1.setDaemon(True)
+thread1.start()
+thread2=threading.Thread(target=check_player_count)
+thread2.start()
+
+
 
 fig, ((ax1,ax2),(ax3,ax4))=plt.subplots(nrows=2,ncols=2)
-
-# line1=ax1.plot([], [], label='Channel 1') #NON CLA() REFRESH
-# line2=ax1.plot([], [], label='Channel 2')
+fig.canvas.manager.window.wm_geometry('1920x1080+1920+0')
 
 def animate(m):
 
-    # #global UDPServerSocket   #GET UDP SINGLE THREAD
-    # #print(UDPServerSocket.recv(bufferSize))
-    # packet,address=UDPServerSocket.recvfrom(bufferSize)
-    # data=udp.codes[struct.unpack(data_format,packet[:24])[4]]
-    # if callable(data):
-    #     data,string_code=data(packet)
-    # data=struct.unpack(data,packet[:struct.calcsize(data)])
-    # if string_code=="BUTN":
-    #     for i in Buttons:
-    #         if Buttons[i] & data[-1]:
-    #             print(i)
-    
-    global work1
-    if work1.done():
-        #print(work1.result())
-        #print(work1.result(),len(work1.result()))
-        scratch=work1.result()
-        if scratch[4]!=3:
-            mega.insert(scratch)
-        #mega.insert(work1.result())
-        work1=pool.submit(get_packet)
-
-    # try:
-    #     mega.lap_times()
-    # except:
-    #     pass
+    #Primary Data
     mega.lap_times()
     lap_times=pd.DataFrame(mega.graph_data["Lap_Times"])
-    #print(lap_times)
+    mega.fuel_loads_per_lap()
+    fuel_loads_per_lap=pd.DataFrame(mega.graph_data["Fuel_Loads_Per_Lap"])
+    mega.tyre_wear()
+    tyre_wear=pd.DataFrame(mega.graph_data["Tyre_Wear"]).mean().to_dict()
+    #print(tyre_wear.to_dict())
+    #tyre_wear=pd.DataFrame(compute.get_total_wear(mega.graph_data["Tyre_Wear"]))
+    #print(mega.graph_data["Tyre_Wear"])
+    #print(tyre_wear)
 
-    # line1,line2=ax1.lines #NON CLA() REFRESH
-    # print(type(line1))
-    # ax2.plot(lap_times)
-    # #print(line1)
-    # #line1.set_data([0,1,2,3,4,5], [6,7,8,9,10,11])
-    # #line2.set_data([0,1,2,3,4,5], [0,1,2,3,4,5])
-    # line1.set_data([i for i in range(100)], [random.randrange(100) for i in range(100)])
-    # line2.set_data([i for i in range(100)], [random.randrange(100) for i in range(100)])
-    # #line1.set_data(lap_times)
-    # #line2.set_data([i for i in range(100)], [random.randrange(100) for i in range(100)])
-    # ax1.set_xlim(0, 120)
-    # ax1.set_ylim(0, 120)
+    #Secondary Data
+    mega.race_distance()
+    #print(mega.graph_data["Race_Distance"])
+    race_distance=pd.Series(mega.graph_data["Race_Distance"])
+    drivers_pace=(race_distance/lap_times.sum()).to_dict()
+    drivers_progress=race_distance/(mega.data["PacketSessionData"]["m_trackLength"]*mega.data["PacketSessionData"]["m_totalLaps"])
+    driver_order=[i for i,_ in sorted(drivers_pace.items(),key=lambda x:x[1])]
+    fuel_burn_per_lap=fuel_loads_per_lap.diff()
+    fuel_burn_max,fuel_burn_avg=fuel_burn_per_lap.max(),fuel_burn_per_lap.mean()
+    thread2.join()
 
     ax1.cla()
-    ax1.plot(lap_times)
+    ax2.cla()
+    ax3.cla()
+    ax4.cla()
+    ax1.plot(lap_times.iloc[:int(lap_times.shape[1]/2)],marker='s')
+    #ax1.scatter(lap_times.iloc[:int(lap_times.shape[1])],marker='o')
+    ax1.plot(lap_times.iloc[int(lap_times.shape[1]/2):],marker='^')
+    ax1.legend([mega.graph_data["Driver_Names"][i][:3] for i in mega.graph_data["Driver_Names"]])
 
-ani = animation.FuncAnimation(plt.gcf(), animate, interval=1)
-
-ax1.legend()
-#fig.canvas.manager.window.move(0)
-#plt.tight_layout()
-plt.show()
-
-# while True:
-#     packet,address=UDPServerSocket.recvfrom(bufferSize)
-#     data=udp.codes[struct.unpack(data_format,packet[:24])[4]]
-#     if callable(data):
-#         data,string_code=data(packet)
+    ax2.plot(fuel_loads_per_lap)
     
-#     data=struct.unpack(data,packet[:struct.calcsize(data)])
-#     if string_code=="BUTN":
-#         for i in Buttons:
-#             if Buttons[i] & data[-1]:
-#                 print(i)
+    ax3.barh([mega.graph_data["Driver_Names"][i][:3] for i in mega.graph_data["Driver_Names"]],tyre_wear.values())
+    #ax3.barh(*zip(*tyre_wear.items()))
+    #ax3.barh(tyre_wear.values(),width=1)
+    
+    ax4.bar([mega.graph_data["Driver_Names"][i][:3] for i in driver_order],[drivers_pace[i] for i in driver_order])
+    #ax4.bar(drivers_pace,height=0.5)
+
+ani = animation.FuncAnimation(plt.gcf(), animate, interval=100)
+
+#ax1.legend()
+plt.show()
