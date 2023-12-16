@@ -13863,6 +13863,8 @@ class Megadata():
         self.validtypes=[str,int,float,bytes] #IDK WHY TF THERE ARE SO MANY DATA TYPES
         self.player_index=0
         self.number_of_drivers=22 #Myteam-22,Normal-20, use my team as basis
+        self.team_colors=[("C"+str(i)) for i in range(11)] # MERC RB F MCL ALP AT AM W AR H OROBUROS #['00D2BE', '0600ef', 'dc0000', 'ff8700', '0090ff', '2b4562','006f62','005aff','900000','b6babd','9467bd', ]
+        self.team_colors={0:"C0",1:"C2",2:"C1",3:"C7",4:"C6",5:"C4",6:"C5",7:"C9",8:"C3",9:"C8",104:"C10"}
         self.graph_data={"Lap_Times":{i:{} for i in range(self.number_of_drivers)}, #Lap:Time
                          "Fuel_Loads_Per_Lap":{i:{} for i in range(self.number_of_drivers)}, #Lap:Fuel
                          "Tyre_Wear":{i:{"RL":0,"RR":0,"FL":0,"FR":0} for i in range(self.number_of_drivers)}, #Driver_index:{RL,RR,FL,FR}
@@ -13870,6 +13872,7 @@ class Megadata():
                          "Driver_Order":{i:0 for i in range(self.number_of_drivers)}, #Driver_index:Distance
                          "Race_Distance":{i:0 for i in range(self.number_of_drivers)}, #Driver_index:Distance
                          "Driver_Names":{i:"Loading" for i in range(self.number_of_drivers)}, #Driver_index:Name
+                         "Driver_Colors":{i:"Loading" for i in range(self.number_of_drivers)}, #Driver_index:Color
                          }
     def insert(self,packet):
         # if packet[4]:
